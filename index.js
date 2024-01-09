@@ -1,6 +1,4 @@
-console.log('hello world');
-const form = document.querySelector('form');
-const message = document.querySelector('#message');
+console.log("Hello")
 
 function addMovie(event) {
     event.preventDefault();
@@ -39,7 +37,7 @@ function revealMessage () {
     message.classList.remove('hide');
     setTimeout(() => {
         message.classList.add('hide');
-    }, 1000);
+    }, 2000);
 }
 
-form.addEventListener('submit', addMovie);
+document.querySelector("form").addEventListener('submit', addMovie)
